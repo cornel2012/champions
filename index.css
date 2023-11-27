@@ -1,4 +1,45 @@
-html, body {
-    margin: 0;
-    padding: 0;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #1b1924;
+
+  color: #fff;
+  /* font-family: Josefin Sans;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; */
+
+  user-select: none;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.header {
+  position: relative;
+  margin: 15px 0 10px;
+  padding: 15px;
+}
+
+.header .champions-img {
+  width: 90px;
+  height: 90px;
+  flex-shrink: 0;
+}
+
+.header h1 {
+    color: #FFF;
+    font-family: Josefin Sans;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
