@@ -1,45 +1,168 @@
 html,
 body {
-  margin: 0;
-  padding: 0;
-  background: #1b1924;
-
-  color: #fff;
-  /* font-family: Josefin Sans;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal; */
-
-  user-select: none;
-  text-align: center;
+    margin: 0;
+    padding: 0;
+    background: #1b1924;
+    color: #fff;
+    user-select: none;
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  max-width: 320px;
-  margin: 0 auto;
-  padding: 15px;
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 15px;
 }
 
 .header {
-  position: relative;
-  margin: 15px 0 10px;
-  padding: 15px;
+    position: relative;
+    margin: 15px 0 0;
+    padding: 15px;
+    text-align: center;
 }
 
 .header .champions-img {
-  width: 90px;
-  height: 90px;
-  flex-shrink: 0;
+    width: 90px;
+    height: 90px;
+    flex-shrink: 0;
 }
 
 .header h1 {
-    color: #FFF;
+    color: #fff;
     font-family: Josefin Sans;
     font-size: 25px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin: 0 auto 5px;
+}
+
+::placeholder {
+    color: #8f8f8f;
+}
+
+.endorsments-form {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    gap: 10px;
+}
+
+.endorsments-form textarea {
+    width: 100%;
+}
+
+.endorsments-form input[type="text"] {
+    width: calc(50% - 5px);
+}
+
+.endorsments-form textarea,
+.endorsments-form input[type="text"] {
+    /* display: flex; */
+    box-sizing: border-box;
+    border-radius: 8px;
+    background: #444059;
+    color: #fff;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    padding: 10px;
+    padding: 10px 15px;
+}
+
+.endorsments-form button {
+    cursor: pointer;
+    color: #04131c;
+    text-align: center;
+    font-family: Josefin Sans;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 8px;
+    background: #28a9f1;
+    padding: 20px 15px;
+    border: none;
+    width: 100%;
+}
+
+.endorsments h2 {
+    color: #fff;
+    font-family: Josefin Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+
+.endorsments ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 0 0 10px;
+    text-align: center;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.endorsments ul li {
+    overflow: hidden;
+    position: relative;
+    font-size: 20px;
+    background-color: #fff;
+    padding: 15px;
+    width: 100%;
+    flex-grow: 1;
+    text-align: left;
+}
+
+.endorsments ul li label {
+    color: #1b1924;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.endorsments ul li p {
+    color: #1b1924;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.endorsments ul li i.btn-favorite {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+    color: #000;
+    font-size: 16px;
+}
+
+.endorsments ul li i.btn-favorite:hover {
+    color: rgb(209, 143, 143);
+}
+
+.endorsments ul li i.btn-favorite span {
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 5px;
 }
