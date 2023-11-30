@@ -1,12 +1,6 @@
 // javascript
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
-import {
-    getDatabase,
-    onValue,
-    push,
-    ref,
-    update,
-} from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
+import { getDatabase, onValue, push, ref, update } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
 
 const appSettings = {
     databaseURL:
@@ -78,16 +72,8 @@ const appendEndorsmentToEndorsmentsList = (endorsment) => {
     const endorsmentID = endorsment[0];
     const endorsmentContent = endorsment[1].content;
     const endorsmentFrom = endorsment[1].from;
-    const endorsmentTo = endorsment[1].from;
+    const endorsmentTo = endorsment[1].to;
     const endorsmentFavoritesCount = endorsment[1].favoritesCount;
-
-    // endorsmentsList.innerHTML += `
-    //     <li>
-    //         <label>To ${endorsmentTo}</label>
-    //         <p>${endorsmentContent}</p>
-    //         <label>From ${endorsmentFrom}</label>
-    //     </li>
-    // `;
 
     let newEndorsmentEl = document.createElement("li");
     newEndorsmentEl.innerHTML = `
